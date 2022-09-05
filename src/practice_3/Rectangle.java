@@ -1,15 +1,15 @@
 package practice_3;
 
-public class Reactangle extends Shape{
+public class Rectangle extends Shape{
     protected double width;
     protected double length;
 
-    public Reactangle(){}
-    public Reactangle(double width, double length){
+    public Rectangle(){}
+    public Rectangle(double width, double length){
         this.width = width;
         this.length = length;
     }
-    public Reactangle(double width, double length, String color, boolean filled){
+    public Rectangle(double width, double length, String color, boolean filled){
         this.width = width;
         this.length = length;
         setColor(color);
@@ -44,6 +44,6 @@ public class Reactangle extends Shape{
 
     @Override
     public String toString() {
-        return "This is a rectangle, width = " + this.width + ", length = " + this.length+ '.';
+        return "This is a rectangle, width: " + this.width + ", length: " + this.length + ", color: " + this.color;
     }
 }
