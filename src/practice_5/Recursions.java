@@ -73,6 +73,6 @@ public class Recursions {
         System.out.println("Ex17: ");
         System.out.println(getMax());
         System.out.println("Ex1: ");
-        triangleSequence(1);
+        triangleSequence(4);
     }
 }

@@ -2,7 +2,7 @@ package practice_3;
 
 public class TestShapes {
     public static void main(String[] args) {
-        //декларируем переменную типа Shape, но присваиваем объект класса Circle т.е.
+
         //Upcasting - восходящее преобразование от наследника к родителю
         Shape s1 = new Circle(5.5, "RED", false);//upcast
         System.out.println(s1);
