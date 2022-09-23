@@ -1,18 +1,19 @@
 package Lab_3;
 
-public class GSD extends Dog{
+public class Dalmatian extends Dog{
 
-    public GSD(String name, int age) {
+    public Dalmatian(String name, int age) {
         super(name, age);
     }
+
     @Override
-    public void showBreed(){
-        System.out.println("Breed - German shepherd dog");
+    public void showBreed() {
+        System.out.println("Breed - Dalmatian dog");
     }
 
     @Override
     public String toString() {
-        return "GSD{" +
+        return "Dalmatian{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
