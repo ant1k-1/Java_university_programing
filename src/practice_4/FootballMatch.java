@@ -43,7 +43,7 @@ public class FootballMatch extends JFrame {
         jLabel1.setText("Result: " + milan + " X " +  real);
         jLabel2.setText("Last Scorer: " + team);
         if (milan > real){
-            jLabel3.setText("Winner: AC Milan");
+            jLabel3.setText("Winne  r: AC Milan");
         } else if (real > milan) {
             jLabel3.setText("Winner: Real Madrid");
         } else
