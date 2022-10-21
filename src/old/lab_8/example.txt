@@ -1,0 +1,4 @@
+This is example text for output into console.
+First line
+Second line
+The end of this text file!
