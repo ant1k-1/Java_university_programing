@@ -1,6 +1,6 @@
 package practice_6;
 
-public class Student {
+public class Student implements Comparable<Student>{
     private double GPA;
     private int idNumber;
 
@@ -31,5 +31,9 @@ public class Student {
                 "GPA=" + GPA +
                 ", idNumber=" + idNumber +
                 '}';
+    }
+    @Override
+    public int compareTo(Student o) {
+        return this.idNumber - o.idNumber;
     }
 }

@@ -1,4 +1,4 @@
-package Lab_4;
+package lab_4;
 
 public class Hotdog implements Priceable{
     private double cost;

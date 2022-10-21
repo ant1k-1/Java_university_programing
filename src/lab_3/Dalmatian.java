@@ -1,19 +1,19 @@
-package Lab_3;
+package lab_3;
 
-public class SiberianHusky extends Dog{
+public class Dalmatian extends Dog{
 
-    public SiberianHusky(String name, int age) {
+    public Dalmatian(String name, int age) {
         super(name, age);
     }
 
     @Override
     public void showBreed() {
-        System.out.println("Breed - SiberianHusky dog");
+        System.out.println("Breed - Dalmatian dog");
     }
 
     @Override
     public String toString() {
-        return "SiberianHusky{" +
+        return "Dalmatian{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
