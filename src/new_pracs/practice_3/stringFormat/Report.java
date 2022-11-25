@@ -2,7 +2,7 @@ package new_pracs.practice_3.stringFormat;
 
 import java.util.ArrayList;
 import java.util.Formatter;
-
+//Разработать класс Отчет о сотрудниках
 public class Report {
     public Report(ArrayList<Employee> employeeArrayList, int icount){
         for (int i = 0; i < icount; i++) {

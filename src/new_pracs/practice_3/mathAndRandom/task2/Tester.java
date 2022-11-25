@@ -1,6 +1,5 @@
 package new_pracs.practice_3.mathAndRandom.task2;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Random;

@@ -1,5 +1,7 @@
 package new_pracs.practice_11.task2;
 
+//Приложение, сравнивающее текущую дату и дату, введенную
+//пользователем c текущим системным временем
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;

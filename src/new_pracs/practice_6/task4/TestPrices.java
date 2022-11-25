@@ -1,5 +1,7 @@
 package new_pracs.practice_6.task4;
-
+//Реализовать интерфейс Priceable, имеющий метод getPrice(),
+//возвращающий некоторую цену для объекта. Проверить работу для различных
+//классов, сущности которых могут иметь цену
 public class TestPrices {
     public static void main(String[] args) {
         Priceable book = new Book(10, "Star Wars");

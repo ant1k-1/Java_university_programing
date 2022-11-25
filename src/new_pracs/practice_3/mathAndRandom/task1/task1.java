@@ -2,6 +2,7 @@ package new_pracs.practice_3.mathAndRandom.task1;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 //Создать массив вещественных чисел случайным образом, вывести его
 //на экран, отсортировать его, и снова вывести на экран (использовать два подхода

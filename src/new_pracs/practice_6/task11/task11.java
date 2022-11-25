@@ -1,5 +1,9 @@
 package new_pracs.practice_6.task11;
 
+//Напишите программу для перевода температуры по Цельсию в
+//температуру по Кельвину и Фаренгейту. Для этого добавьте интерфейс
+//Convertable у которого есть метод convert для конвертации из одной системы
+//измерения в другую.
 public class task11 implements Convertable{
     public task11() {}
 

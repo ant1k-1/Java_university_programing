@@ -1,7 +1,10 @@
 package new_pracs.practice_7.task7_8;
 
-import java.util.ArrayList;
-
+//7. Создать статический метод printMagazines(Printable[] printable) в
+//классе Magazine, который выводит на консоль названия только журналов.
+//8. Создать статический метод printBooks(Printable[] printable) в классе
+//Book, который выводит на консоль названия только книг. Используем оператор
+//instanceof
 public class Tester {
     public static void main(String[] args) {
         Book book1 = new Book("Star Wars", "George Walton Lucas");

@@ -1,4 +1,8 @@
 package new_pracs.practice_11.task4;
+//Напишите пользовательский код, который формирует объекты Date и
+//Calendar по следующим данным, вводимым пользователем:
+//<Год><Месяц><Число>
+//<Часы1><минуты>
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

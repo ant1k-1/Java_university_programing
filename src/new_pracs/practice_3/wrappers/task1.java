@@ -1,5 +1,11 @@
 package new_pracs.practice_3.wrappers;
-
+//1. Создайте объекты класса Double, используя методы valueOf().
+//2. Преобразовать значение типа String к типу double. Используем
+//метод Double.parseDouble().
+//3. Преобразовать объект класса Double ко всем примитивным типам.
+//4. Вывести значение объекта Double на консоль.
+//5. Преобразовать литерал типа double к строке: String d =
+//Double.toString(3.14);
 public class task1 {
     public static void main(String[] args) {
         Double d1, d2, d3;
