@@ -1,1 +1,2 @@
-# Java_university_programing
+# Java university programing
+Практические работы по дисциплине "Программирование на языке Java"
