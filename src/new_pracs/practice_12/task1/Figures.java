@@ -4,7 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
-
+//1. Создать окно, нарисовать в нем 20 случайных фигур, случайного
+//цвета. Классы фигур должны наследоваться от абстрактного класса Shape, в
+//котором описаны свойства фигуры: цвет, позиция.
 public class Figures extends JPanel {
     public Figures(){
         setBackground(Color.WHITE);
@@ -13,7 +15,6 @@ public class Figures extends JPanel {
     protected void paintComponent(Graphics g){
         super.paintComponent(g);
         Random random = new Random();
-        ArrayList shapes = new ArrayList<>();
         String[] shapesName = new String[]{"Circle", "Rectangle", "Triangle"};
         for (int count = 0; count < 20; count++) {
             String shape = shapesName[random.nextInt(3)];
@@ -42,7 +43,6 @@ public class Figures extends JPanel {
         frame.add(new Figures());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 }
