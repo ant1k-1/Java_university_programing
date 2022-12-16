@@ -12,7 +12,7 @@ public class Fonts extends JFrame{
         setLayout(new BorderLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         JTextArea textArea = new JTextArea();
-
+        textArea.setFont(new Font("Times New Roman", Font.BOLD, 20));
         JMenuBar jMenuBar = new JMenuBar();
         JMenu jMenuColors = new JMenu("Colors");
         JMenu jMenuFonts = new JMenu("Fonts");
@@ -39,50 +39,18 @@ public class Fonts extends JFrame{
         this.setJMenuBar(jMenuBar);
         this.add(textArea,BorderLayout.CENTER);
 
-        jMenuItemRed.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textArea.setForeground(Color.RED);
-            }
-        });
+        jMenuItemRed.addActionListener(e -> textArea.setForeground(Color.RED));
 
-        jMenuItemBlue.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textArea.setForeground(Color.blue);
-            }
-        });
+        jMenuItemBlue.addActionListener(e -> textArea.setForeground(Color.blue));
 
-        jMenuItemBlack.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textArea.setForeground(Color.black);
-            }
-        });
+        jMenuItemBlack.addActionListener(e -> textArea.setForeground(Color.black));
 
-        jMenuItemTimes.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textArea.setFont(new Font("Times New Roman",Font.BOLD, 16));
-            }
-        });
+        jMenuItemTimes.addActionListener(e -> textArea.setFont(new Font("Times New Roman",Font.BOLD, 20)));
 
-        jMenuItemCourier.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textArea.setFont(new Font("MS Sans Serif", Font.BOLD, 16));
-            }
-        });
+        jMenuItemCourier.addActionListener(e -> textArea.setFont(new Font("MS Sans Serif", Font.BOLD, 20)));
 
-        jMenuItemSans.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textArea.setFont(new Font("Courier New",Font.BOLD, 16));;
-            }
-        });
-
+        jMenuItemSans.addActionListener(e -> textArea.setFont(new Font("Courier New",Font.BOLD, 20)));
     }
-
     public static void main(String[] args) {
         new Fonts().setVisible(true);
     }

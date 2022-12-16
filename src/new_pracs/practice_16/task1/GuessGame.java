@@ -26,28 +26,25 @@ public class GuessGame extends JFrame {
         Random random = new Random();
         Integer guessNumber = random.nextInt(0, 50);
 
-        jBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(input.getText().toString() == "") return;
-                if (input.getText().toString().equals(guessNumber.toString())){
-                    JOptionPane.showMessageDialog(getContentPane(),"Угадал!");
-                    setVisible(false);
-                    dispose();
-                }
-                else if(counter[0] == 2){
-                    JOptionPane.showMessageDialog(getContentPane(),"Не угадал( Кончились попытки!");
-                    setVisible(false);
-                    dispose();
+        jBtn.addActionListener(e -> {
+            if(input.getText() == "") return;
+            if (input.getText().equals(guessNumber.toString())){
+                JOptionPane.showMessageDialog(getContentPane(),"Угадал!");
+                setVisible(false);
+                dispose();
+            }
+            else if(counter[0] == 2){
+                JOptionPane.showMessageDialog(getContentPane(),"Не угадал( Кончились попытки!");
+                setVisible(false);
+                dispose();
+            }
+            else{
+                counter[0]++;
+                if (Integer.parseInt(input.getText()) > guessNumber){
+                    JOptionPane.showMessageDialog(getContentPane(),"Число меньше!");
                 }
                 else{
-                    counter[0]++;
-                    if (Integer.parseInt(input.getText().toString()) > guessNumber){
-                        JOptionPane.showMessageDialog(getContentPane(),"Число меньше!");
-                    }
-                    else{
-                        JOptionPane.showMessageDialog(getContentPane(),"Число больше!");
-                    }
+                    JOptionPane.showMessageDialog(getContentPane(),"Число больше!");
                 }
             }
         });
