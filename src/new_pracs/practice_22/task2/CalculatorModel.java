@@ -29,7 +29,8 @@ public class CalculatorModel {
         this.output = output;
     }
 
-    public double calculate() throws EmptyStackException, ArithmeticException{
+    public void calculate() throws EmptyStackException, ArithmeticException{
+
         Double result = 0d;
 
         String currentPosition = "";
@@ -62,8 +63,8 @@ public class CalculatorModel {
                 currentPosition += input.charAt(i);
             }
         }
-        if (currentStack.empty()) return 0d;
-        else return currentStack.pop();
+        if (currentStack.empty()) this.output ="";
+        else this.output = result.toString();
     }
     public boolean isOperand(String str){
         return str.equals("+") || str.equals("-") || str.equals("*") || str.equals("/");
