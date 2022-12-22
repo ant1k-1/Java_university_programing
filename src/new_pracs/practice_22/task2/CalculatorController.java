@@ -21,10 +21,10 @@ public class CalculatorController {
                     model.calculate();
                 }catch (EmptyStackException exception){
                     setDefault(model, view);
-                    view.alertMessage(exception.getMessage());
+                    view.alertMessage("Стек пустой или некорректный ввод");
                 }catch (ArithmeticException exception){
                     setDefault(model, view);
-                    view.alertMessage(exception.getMessage());
+                    view.alertMessage("Деление на ноль!");
                 }
                 view.setTextUserInput(model.getOutput());
             } else if (e.getActionCommand().charAt(0) == '.') {
@@ -32,7 +32,7 @@ public class CalculatorController {
             } else if (view.getTextUserInput().length()!=0 && view.getTextUserInput().charAt(view.getTextUserInput().length()-1)=='.') {
                 view.setTextUserInput((view.getTextUserInput()) + e.getActionCommand());
             } else{
-                view.setTextUserInput((view.getTextUserInput()) + e.getActionCommand());
+                view.setTextUserInput((view.getTextUserInput())+ " " + e.getActionCommand());
             }
         };
         view.setActionListener(btnActionListener);
