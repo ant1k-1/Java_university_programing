@@ -15,10 +15,9 @@ public class Exception4 {
         } catch (Exception e){
             System.out.println("Caught an Exception");
         } finally {
-            System.out.println("Successful!");
+            System.out.println("finally check");
         }
     }
-    //выведет УСПЕХ если не поймает исключение
     public static void main(String[] args) {
         Exception4 exception4 = new Exception4();
         exception4.exceptionDemo();

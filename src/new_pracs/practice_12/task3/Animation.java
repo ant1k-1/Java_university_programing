@@ -15,7 +15,7 @@ public class Animation extends JFrame {
         setLayout(new BorderLayout());
         setSize(1080, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        String path = "C:/Users/Anton/Desktop/Java_university_programing/src/new_pracs/practice_12/task3/frames/frame_";
+        String path = "C:\\Users\\Антон\\IdeaProjects\\Java_university_programing\\src\\new_pracs\\practice_12\\task3\\frames/frame_";
         String origin = path;
         ArrayList<Image> frames = new ArrayList<>();
         for (int i = 0; i < 180; i++) {
